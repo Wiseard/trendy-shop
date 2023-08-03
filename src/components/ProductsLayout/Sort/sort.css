@@ -33,6 +33,14 @@
   transition: 0.3s;
 }
 
+.sort-icon {
+  color: var(--color-black);
+}
+
+.sort-view .active .sort-icon {
+  color: var(--color-white);
+}
+
 .sort-view-products-number {
   font-size: 0.6rem;
   color: var(--color-black);

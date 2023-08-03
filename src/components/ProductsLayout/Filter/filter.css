@@ -38,6 +38,7 @@ h3.filter-subtitle {
 
 .form-icon {
   transition: 0.3s;
+  color: var(--color-black);
 }
 
 .filter-underline {
@@ -109,10 +110,15 @@ h3.filter-subtitle {
   background-color: transparent;
   border-color: transparent;
   cursor: pointer;
+  color: var(--color-black);
 }
 
 .btn-category-active {
   font-weight: var(--font-weight-bold);
+}
+
+.categories-icon {
+  color: var(--color-black);
 }
 
 /* price container */

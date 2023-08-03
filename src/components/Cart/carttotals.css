@@ -44,6 +44,10 @@
   flex-direction: column;
 }
 
+.shipping-modes label {
+  margin-left: 0.765rem;
+}
+
 .address-form {
   display: flex;
   flex-direction: column;

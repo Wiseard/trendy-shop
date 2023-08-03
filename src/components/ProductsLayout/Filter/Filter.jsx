@@ -87,7 +87,7 @@ const Filter = () => {
                   className="btn-categories-control"
                   onClick={() => setCategoryOpen(false)}
                 >
-                  <AiOutlineMinus />
+                  <AiOutlineMinus className="categories-icon" />
                 </button>
               ) : (
                 <button
@@ -95,7 +95,7 @@ const Filter = () => {
                   className="btn-categories-control"
                   onClick={() => setCategoryOpen(true)}
                 >
-                  <AiOutlinePlus />
+                  <AiOutlinePlus className="categories-icon" />
                 </button>
               )}
             </header>

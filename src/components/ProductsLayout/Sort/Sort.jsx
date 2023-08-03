@@ -22,14 +22,14 @@ const SortAlt = () => {
           className={`btn-sort ${grid_view && 'active'}`}
           onClick={setGridView}
         >
-          <BsFillGridFill />
+          <BsFillGridFill className="sort-icon grid-icon" />
         </button>
         <button
           type="button"
           className={`btn-sort ${!grid_view && 'active'}`}
           onClick={setListView}
         >
-          <FaThList />
+          <FaThList className="sort-icon grid-icon" />
         </button>
         <p className="sort-view-products-number">
           {products.length} products found
