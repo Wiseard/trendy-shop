@@ -11,6 +11,7 @@ const ServicesAlt = () => {
               <span className="service-icon">{icon}</span>
               <h4 className="service-desc">{name}</h4>
               <p>{text}</p>
+              <div className="underline"></div>
             </article>
           )
         })}

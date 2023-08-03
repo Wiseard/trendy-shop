@@ -35,6 +35,15 @@ h4.service-desc {
   font-weight: 200;
 }
 
+.underline {
+  height: 1px;
+  width: 45%;
+  margin: 0 auto;
+  background-color: var(--color-grey);
+  margin-top: 1.765rem;
+  display: none;
+}
+
 /* FEATURED RESPONSIVE */
 
 @media screen and (max-width: 2000px) {
@@ -54,4 +63,21 @@ h4.service-desc {
     grid-template-columns: 1fr;
     margin: 0;
   }
+
+  .service-container {
+    padding: 1.765rem 2rem;
+  }
+
+  .services-container .service-container:nth-child(1) .underline,
+  .services-container .service-container:nth-child(2) .underline {
+    display: block;
+  }
+
+  /* .services-container .service-container:last-child {
+    color: red;
+  } */
+
+  /* .underline {
+    display: block;
+  } */
 }
