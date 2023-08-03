@@ -1,0 +1,3 @@
+[submodule "react-trendy-ecommerce"]
+	path = react-trendy-ecommerce
+	url = https://github.com/Wiseard/react-trendy-ecommerce.git

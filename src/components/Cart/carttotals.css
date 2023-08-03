@@ -1,0 +1,237 @@
+/* CART TOTALS */
+
+.cart-totals-container {
+  padding: 1rem;
+  background-color: #fafafa;
+}
+
+.cart-totals-content {
+  margin-top: 2rem;
+}
+
+.subtotal h3,
+.shipping-header h3,
+.delivery-time h3 {
+  padding-left: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  min-width: 150px;
+}
+
+.subtotal,
+.shipping-content,
+.delivery-time {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+.subtotal p {
+  align-self: center;
+  font-size: 0.8rem;
+}
+
+.shipping-content label {
+  font-size: 0.8rem;
+}
+
+.delivery-time p {
+  font-size: 0.8rem;
+  align-self: center;
+}
+
+.shipping-modes {
+  display: flex;
+  flex-direction: column;
+}
+
+.address-form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
+}
+
+.select-country {
+  position: relative;
+}
+
+.btn-select-country {
+  position: absolute;
+  background-color: transparent;
+  border-color: transparent;
+  top: 55%;
+  transform: translateY(-50%);
+  right: 3.5rem;
+  font-size: 1.2rem;
+  color: grey;
+}
+
+.delivery-address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2.5rem;
+}
+
+.address-header {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.address-header h3 {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.btn-address-dropdown {
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 1.4rem;
+  align-self: flex-end;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.address-dropdown-icon {
+  color: var(--color-black);
+}
+
+.address-update {
+  transition: 0.3s;
+  overflow: hidden;
+}
+
+select.address-dropdown {
+  color: #abb8c3;
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e1e1e1;
+  width: 80%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+select.error-address-dropdown {
+  border: 1px solid red;
+}
+
+.address-form input {
+  font-size: 1rem;
+  height: 3rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid #e1e1e1;
+  color: #abb8c3;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.address-form input::placeholder {
+  color: #abb8c3;
+}
+
+.address-form select:disabled {
+  background-color: #abb8c37c;
+  color: #696c6ed8;
+}
+.address-form input:disabled {
+  background-color: #abb8c37c;
+  color: #696c6ed8;
+}
+
+.btn-submit-address {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.cart-totals-underline {
+  height: 1px;
+  width: 95%;
+  background-color: #e1e1e1;
+  margin: 1rem auto;
+}
+
+.cart-totals-sum {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cart-totals-sum h3 {
+  font-size: 1.1rem;
+}
+
+.cart-totals-sum p {
+  font-size: 1.2rem;
+  color: var(--color-golden);
+}
+
+.btn-checkout-container {
+  padding: 0 0.5rem;
+  margin-top: 2rem;
+}
+
+.btn-checkout-validation {
+  width: 100%;
+  display: block;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.btn-checkout-disabled {
+  background-color: grey;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+  .cart-totals-container {
+    justify-self: center;
+    margin-top: 3rem;
+  }
+
+  .subtotal h3,
+  .shipping-header h3,
+  .delivery-time h3 {
+    text-align: left;
+  }
+
+  .delivery-address {
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .cart-totals-container {
+    width: 100%;
+  }
+
+  .subtotal,
+  .delivery-time {
+    justify-content: space-between;
+    text-align: right;
+  }
+
+  .shipping-content {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 2rem 0;
+  }
+
+  .shipping-content form {
+    padding: 2rem;
+  }
+
+  .subtotal h3,
+  .shipping-header h3,
+  .delivery-time h3 {
+    min-width: 0;
+  }
+}

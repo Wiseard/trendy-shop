@@ -1,0 +1,32 @@
+.section-center {
+  padding-left: 2rem;
+  margin-bottom: 3rem;
+}
+.section-center h3,
+.section-center a {
+  font-size: 0.7rem;
+  font-weight: 300;
+}
+
+.section-center a,
+.section-center span {
+  color: #949494;
+}
+
+.section-center h3 {
+  color: var(--color-black);
+}
+
+/* PAGE HERO RESPONSIVE */
+
+@media screen and (max-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+}
+@media screen and (max-width: 750px) {
+  .section-center {
+    padding-left: 1rem;
+    margin-bottom: 3rem;
+  }
+}

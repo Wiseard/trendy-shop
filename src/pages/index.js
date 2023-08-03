@@ -1,0 +1,7 @@
+export { default as Home } from './Home'
+export { default as ProductsLayout } from './ProductsLayout/ProductsLayout'
+export { default as SingleProduct } from './SingleProductPage/SingleProduct'
+export { default as Cart } from './Cart/Cart'
+export { default as Checkout } from './Checkout/Checkout'
+export { default as PrivateRoute } from './PrivateRoute/PrivateRoute'
+export { default as About } from './About/About'

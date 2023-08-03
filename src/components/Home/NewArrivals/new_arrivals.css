@@ -1,0 +1,52 @@
+.arrivals-container {
+  padding-right: 3rem;
+  position: relative;
+  justify-content: flex-end;
+  margin: 6rem 0;
+}
+
+.arrivals-title,
+.arrivals-subtitle {
+  text-align: right;
+}
+
+.arrivals-subtitle {
+  color: var(--color-black);
+  font-size: var(--font-size-medium);
+  font-weight: var(--font-weight-semi-bold);
+  position: relative;
+}
+
+.arrivals-underline {
+  height: 5px;
+  width: 50%;
+  background-color: black;
+  margin-left: auto;
+  margin-top: 1.765rem;
+}
+
+.arrivals-btn {
+  margin-left: auto;
+  margin-top: 1.765rem;
+  width: fit-content;
+}
+
+/* NEW ARRIVALS RESPONSIVE */
+
+@media screen and (max-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+  .arrivals-container {
+    padding-right: 1rem;
+    margin: 4rem 0;
+  }
+  .arrivals-underline {
+    margin-top: 1rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  .arrivals-container {
+    margin: 3rem 0;
+  }
+}

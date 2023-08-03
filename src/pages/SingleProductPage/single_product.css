@@ -1,0 +1,13 @@
+/* SINGLE PRODUCT PAGE */
+
+.single-article-container {
+  margin-top: 5rem;
+}
+
+@media screen and (max-width: 2000px) {
+}
+
+@media screen and (max-width: 1150px) {
+}
+@media screen and (max-width: 650px) {
+}

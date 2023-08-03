@@ -1,0 +1,138 @@
+.discover-container {
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+/*  */
+/* parallax container */
+/*  */
+.discover-parallax-image {
+  background-image: url('../../../assets/turquoise-bag-fullsize.jpeg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+/*  */
+/* turquoise purse container */
+/*  */
+.discover-article {
+  place-items: center;
+  overflow: hidden;
+}
+
+/* turquoise purse image */
+
+.discover-image-container {
+  overflow: hidden;
+}
+
+.discover-article-image {
+  transition: 0.3s;
+}
+
+.discover-article-image:hover {
+  transform: scale(1.05);
+}
+
+/* turquoise purse info */
+
+.discover-article-info {
+  width: 380px;
+  padding: 0.5rem 0;
+}
+
+.discover-article-desc {
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.discover-article-prices {
+  font-weight: var(--font-weight-medium);
+  color: var(--color-grey);
+  line-height: 1;
+}
+
+p.old-price {
+  text-decoration: line-through;
+  font-size: var(--font-size-small);
+}
+p.new-price {
+  color: var(--color-black);
+}
+
+/* link learn more */
+
+.learn-more {
+  padding: 0.5rem 0;
+  font-weight: var(--font-weight-medium);
+  width: fit-content;
+  margin-left: auto;
+}
+
+/* DISCOVER RESPONSIVE */
+
+@media screen and (max-width: 2000px) {
+  .discover-container {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .discover-article-desc h4 {
+    font-weight: var(--font-weight-light);
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .discover-container {
+    grid-template-columns: 450px;
+    justify-content: center;
+    height: auto;
+    padding: 1rem;
+  }
+
+  .discover-parallax-image {
+    display: none;
+  }
+
+  .discover-image-container {
+    width: 100%;
+    height: 100%;
+  }
+  .discover-article-image {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .discover-container {
+    grid-template-columns: 280px;
+  }
+
+  .discover-image-container {
+    height: 350px;
+  }
+  .discover-article-image {
+    height: 100%;
+  }
+
+  .discover-article-image:hover {
+    transform: scale(1);
+  }
+
+  .discover-article-info {
+    width: 90%;
+  }
+
+  .learn-more {
+    font-size: 0.7rem;
+  }
+}

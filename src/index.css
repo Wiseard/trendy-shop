@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
+/* Add font-family Poppins */
+:root {
+  /* h2 */
+  --h2-font-size: 2rem;
+
+  /* h3 */
+  --h3-font-size: 1.5rem;
+  --h3-font-weight: 350;
+
+  /* h4 */
+  --h4-font-size: 1.3rem;
+  --h4-font-weight: 200;
+
+  /* h5 */
+  --h5-font-size: 1.1rem;
+  --h5-font-weight: 300;
+
+  /* p */
+  --p-font-size: 1rem;
+  --p-font-weight: 200;
+
+  /* cursive */
+  --h2-cursive-font-size: 5rem;
+  --h3-cursive-font-size: 4rem;
+
+  /* color */
+  --color-grey: #949494;
+  --color-black: #000;
+  --color-white: #fff;
+  --color-golden: #b7882d;
+
+  /* typography */
+  --letter-spacing: 1px;
+  --font-weight-light: 200;
+  --font-weight-medium: 300;
+  --font-weight-semi-bold: 400;
+  --font-weight-bold: 600;
+
+  /* size */
+  --font-size-small: 1rem;
+  --font-size-medium: 2rem;
+  --font-size-large: 3rem;
+
+  /* font-family */
+  --font-family-logo: 'Righteous', serif;
+  --font-family-normal: 'Poppins', sans-serif;
+  --font-family-cursive: 'Nothing You Could Do', cursive;
+}
+
+/* DEFAULT CSS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-normal);
+}
+
+html {
+  font-size: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+img {
+  display: block;
+}
+
+h2 {
+  font-size: var(--h2-font-size);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-black);
+  letter-spacing: var(--letter-spacing);
+}
+
+h3 {
+  font-size: var(--h3-font-size);
+  font-weight: var(--h3-font-weight);
+  color: var(--color-black);
+  letter-spacing: var(--letter-spacing);
+}
+
+h4 {
+  font-size: var(--h4-font-size);
+  font-weight: var(--font-weight-light);
+}
+
+h5 {
+  font-size: var(--h5-font-size);
+  font-weight: var(--h5-font-weight);
+}
+
+p {
+  font-size: var(--p-font-size);
+  letter-spacing: var(--letter-spacing);
+  color: var(--color-grey);
+  font-weight: var(--p-font-weight);
+  line-height: 1.8;
+}
+
+/* REUSABLE COMPONENT */
+
+/* titles */
+
+h2.cursive-title {
+  font-family: var(--font-family-cursive);
+  font-size: var(--h2-cursive-font-size);
+  color: var(--color-black);
+}
+
+h3.cursive-title {
+  font-family: var(--font-family-cursive);
+  font-size: var(--h3-cursive-font-size);
+  color: var(--color-black);
+}
+
+/* boxes */
+
+.box-container {
+  padding: 1rem;
+}
+.box-section {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+/* buttons */
+
+.btn {
+  padding: 1rem 3rem;
+  background-color: black;
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+}
+
+.btn-shop-now {
+  margin-top: 3rem;
+  display: inline-block;
+}
+
+.btn-standard {
+  padding: 1rem 3rem;
+  background-color: var(--color-black);
+  border-color: transparent;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.btn-standard span {
+  font-size: var(--font-size-small);
+}
+
+.arrow-right-icon {
+  font-size: 1.2rem;
+  transition: 0.3s;
+}
+
+.btn-standard:hover .arrow-right-icon {
+  transform: translateX(5px);
+}
+
+/* links */
+
+.link-standard {
+  padding: 1rem 3rem;
+  color: var(--color-golden);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.link-standard:hover .arrow-right-icon {
+  transform: translateX(5px);
+}
+
+/* table */
+
+table {
+  table-layout: fixed;
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse;
+  border-left: 1px solid #e1e1e1;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  transition: 0.3s;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+tbody {
+  color: #949494;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+/* form */
+
+select {
+  font-weight: var(--font-weight-light);
+}
+/* form label {
+  padding: 0 1rem;
+} */
+
+@media screen and (max-width: 2000px) {
+  :root {
+    /* h2 */
+    --h2-cursive-font-size: 5rem;
+    --h2-font-size: 2rem;
+
+    /* h3 */
+    --h3-cursive-font-size: 4.3rem;
+    --h3-font-size: 1.7rem;
+
+    /* h4 */
+    --h4-font-size: 1.3rem;
+
+    /* h5 */
+    --h5-font-size: 1.1rem;
+    --h5-font-weight: 300;
+
+    /* p */
+    --p-font-size: 1rem;
+    --p-font-weight: 200;
+    /* size */
+    --font-size-small: 1rem;
+    --font-size-medium: 1.8rem;
+    --font-size-large: 3rem;
+  }
+  .btn-standard {
+    padding: 1rem 3rem;
+    background-color: var(--color-black);
+    border-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  :root {
+    /* h2 */
+    --h2-cursive-font-size: 4rem;
+    --h2-font-size: 1.8rem;
+
+    /* h3 */
+    --h3-cursive-font-size: 3.3rem;
+    --h3-font-size: 1.5rem;
+
+    /* h4 */
+    --h4-font-size: 1.1rem;
+
+    /* h5 */
+    --h5-font-size: 1rem;
+    --h5-font-weight: 300;
+
+    /* p */
+    --p-font-size: 0.9rem;
+    --p-font-weight: 200;
+    /* size */
+    --font-size-small: 0.8rem;
+    --font-size-medium: 1.7rem;
+    --font-size-large: 2.8rem;
+  }
+  .btn-standard {
+    padding: 1rem 2.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+  }
+}
+@media screen and (max-width: 650px) {
+  :root {
+    /* h2 */
+    --h2-cursive-font-size: 2.5rem;
+    --h2-font-size: 1.5rem;
+
+    /* h3 */
+    --h3-cursive-font-size: 2.2rem;
+    --h3-font-size: 1.3rem;
+
+    /* h4 */
+    --h4-font-size: 1rem;
+
+    /* h5 */
+    --h5-font-size: 0.9rem;
+    --h5-font-weight: 300;
+
+    /* p */
+    --p-font-size: 0.8rem;
+    --p-font-weight: 200;
+
+    /* size */
+    --font-size-small: 0.6rem;
+    --font-size-medium: 1.2rem;
+    --font-size-large: 2.6rem;
+  }
+
+  /* buttons */
+  .btn-standard {
+    padding: 0.6rem 2rem;
+  }
+
+  .btn-standard span {
+    font-size: 0.8rem;
+  }
+}
