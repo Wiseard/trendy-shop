@@ -45,7 +45,8 @@ const SingleProductAlt = () => {
   }
 
   return (
-    <section className="single-article-container box-container box-section">
+    <section className="single-article-container box-section">
+      {/* <section className="single-article-container box-container box-section"> */}
       <PageHero title={id} product />
       {product.length && <Article product={product} />}
     </section>
