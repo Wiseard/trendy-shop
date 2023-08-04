@@ -18,6 +18,10 @@ export { default as Filter } from './ProductsLayout/Filter/Filter'
 export { default as Sort } from './ProductsLayout/Sort/Sort'
 export { default as Products } from './ProductsLayout/Products/Products'
 
+// SINGLE PRODUCT
+export { default as Article } from './SingleProductLayout/Article'
+export { default as SkeletonsProduct } from './SingleProductLayout/SkeletonsProduct'
+
 // CART
 export { default as CartItems } from './CartItem/CartItems'
 export { default as ShoppingCart } from './Cart/ShoppingCart'
@@ -25,7 +29,3 @@ export { default as EmptyCart } from './Cart/EmptyCart'
 
 // ORDERS
 export { default as Orders } from './Checkout/Orders'
-
-// ERROR
-export { default as ErrorData } from './Error/ErrorData'
-export { default as Error404 } from './Error/Error404'

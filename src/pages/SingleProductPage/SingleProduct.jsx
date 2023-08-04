@@ -1,11 +1,9 @@
 import { useNavigate, useParams } from 'react-router-dom'
 import { useProductsContext } from '../../context/products_context'
 import { useEffect } from 'react'
-import PageHero from '../../components/PageHero/PageHero'
+import { PageHero, Article, SkeletonsProduct } from '../../components/index'
+import { ErrorData } from '../index'
 import './single_product.css'
-import Article from '../../components/SingleProductLayout/Article'
-import SkeletonsProduct from '../../components/SingleProductLayout/SkeletonsProduct'
-import ErrorData from '../../components/Error/ErrorData'
 
 export const singleProductUrl = `/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22product%22+%26%26+slug.current+%3D%3D+%22green-shoes%22%5D`
 
@@ -46,7 +44,7 @@ const SingleProductAlt = () => {
       </section>
     )
   }
-  if (error) {
+  if (error || product.length < 1) {
     return (
       <section className="single-article-container box-section">
         <ErrorData />
@@ -57,7 +55,7 @@ const SingleProductAlt = () => {
   return (
     <section className="single-article-container box-section">
       <PageHero title={id} product />
-      {product.length && <Article product={product} />}
+      {product.length > 0 && <Article product={product} />}
     </section>
   )
 }

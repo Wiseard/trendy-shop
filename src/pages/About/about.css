@@ -4,9 +4,8 @@
 }
 
 .about {
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 40% 55%;
   column-gap: 2.765rem;
-  padding: 0 3rem;
 }
 
 .about-image {
@@ -38,7 +37,7 @@
 
 @media screen and (max-width: 650px) {
   .about {
-    padding: 0 2rem;
+    padding: 0 1rem;
   }
 
   .about-image {

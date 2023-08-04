@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
-/* Add font-family Poppins */
+
 :root {
   /* h2 */
   --h2-font-size: 2rem;
@@ -176,6 +176,12 @@ h3.cursive-title {
   font-size: var(--font-size-small);
 }
 
+.btn-error {
+  width: fit-content;
+  margin: 0 auto;
+  margin-top: 3.765rem;
+}
+
 .arrow-right-icon {
   font-size: 1.2rem;
   transition: 0.3s;
@@ -336,5 +342,11 @@ select {
 
   .btn-standard span {
     font-size: 0.8rem;
+  }
+
+  .btn-error {
+    width: fit-content;
+    margin: 0 auto;
+    margin-top: 0rem;
   }
 }

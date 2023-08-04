@@ -1,5 +1,6 @@
 import './error_data.css'
 import errorImage from '../../assets/error.svg'
+import { Link } from 'react-router-dom'
 
 const ErrorData = () => {
   return (
@@ -9,6 +10,9 @@ const ErrorData = () => {
         <h2>please try again</h2>
       </div>
       <img src={errorImage} alt="error image" />
+      <Link to="/" className="btn-error btn-standard">
+        back home
+      </Link>
     </section>
   )
 }

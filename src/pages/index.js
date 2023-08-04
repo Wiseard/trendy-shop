@@ -5,3 +5,6 @@ export { default as Cart } from './Cart/Cart'
 export { default as Checkout } from './Checkout/Checkout'
 export { default as PrivateRoute } from './PrivateRoute/PrivateRoute'
 export { default as About } from './About/About'
+// ERROR
+export { default as ErrorData } from './Error/ErrorData'
+export { default as Error404 } from './Error/Error404'

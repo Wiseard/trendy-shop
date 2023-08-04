@@ -1,11 +1,5 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import {
-  Navbar,
-  Footer,
-  SidebarCart,
-  SidebarMenu,
-  Error404,
-} from './components/index'
+import { Navbar, Footer, SidebarCart, SidebarMenu } from './components/index'
 import {
   Home,
   ProductsLayout,
@@ -14,6 +8,7 @@ import {
   Checkout,
   PrivateRoute,
   About,
+  Error404,
 } from './pages/index'
 
 const App = () => {
