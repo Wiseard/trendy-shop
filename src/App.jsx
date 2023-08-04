@@ -1,5 +1,11 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Navbar, Footer, SidebarCart, SidebarMenu } from './components/index'
+import {
+  Navbar,
+  Footer,
+  SidebarCart,
+  SidebarMenu,
+  Error404,
+} from './components/index'
 import {
   Home,
   ProductsLayout,
@@ -30,6 +36,7 @@ const App = () => {
             </PrivateRoute>
           }
         />
+        <Route path="/*" element={<Error404 />} />
       </Routes>
       <Footer />
     </BrowserRouter>

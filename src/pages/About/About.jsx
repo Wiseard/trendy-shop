@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 const About = () => {
   useEffect(() => {
     document.title = 'Trendy - About us'
+    window.scrollTo(0, 0)
   }, [])
 
   return (

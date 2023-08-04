@@ -11,9 +11,10 @@ import {
 const Home = () => {
   useEffect(() => {
     document.title = 'Trendy - Home'
+    window.scrollTo(0, 0)
   }, [])
   return (
-    <main>
+    <main className="home-container">
       <Hero />
       <Featured />
       <NewArrivals />

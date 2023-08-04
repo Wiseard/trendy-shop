@@ -2,12 +2,12 @@ import { useFilterContext } from '../../../context/filter_context'
 import urlFor from '../../../utils/sanity_image_builder'
 import { formatPrice } from '../../../utils/helpers'
 import { Link } from 'react-router-dom'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 import './products.css'
 
 const ProductsAlt = () => {
   const { filtered_products: products, grid_view } = useFilterContext()
-
   if (products.length < 1) {
     return (
       <h5 style={{ textTransform: 'none' }}>
@@ -32,7 +32,7 @@ const ProductsAlt = () => {
                 }
               >
                 <Link to={`/shop/${slug.current}`}>
-                  <img
+                  <LazyLoadImage
                     src={urlFor(image[0])}
                     alt={name}
                     className="article-image"

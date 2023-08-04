@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useCartContext } from '../../context/cart_context'
 import { formatPrice } from '../../utils/helpers'
 import { BiChevronDown } from 'react-icons/bi'
+import { BsCreditCard } from 'react-icons/bs'
 import country_list from '../../utils/constants/countries'
 import { nanoid } from 'nanoid'
 import { Link } from 'react-router-dom'
@@ -309,7 +310,8 @@ const CartTotals = () => {
               )
             }
           >
-            place order
+            <BsCreditCard />
+            <span>pay</span>
           </Link>
         </div>
       </div>

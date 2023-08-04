@@ -5,6 +5,7 @@ import './products_layout.css'
 const ProductsLayout = () => {
   useEffect(() => {
     document.title = 'Trendy - Shop'
+    window.scrollTo(0, 0)
   }, [])
 
   return (

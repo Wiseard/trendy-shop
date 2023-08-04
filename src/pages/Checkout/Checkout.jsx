@@ -5,6 +5,7 @@ import './checkout.css'
 const Checkout = () => {
   useEffect(() => {
     document.title = 'Trendy - Your orders'
+    window.scrollTo(0, 0)
   }, [])
 
   return (

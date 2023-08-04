@@ -13,7 +13,7 @@ export { default as NewArrivals } from './Home/NewArrivals/NewArrivals'
 // PAGE HERO
 export { default as PageHero } from './PageHero/PageHero'
 
-// PRODUCT LAYOUT
+// PRODUCTS LAYOUT
 export { default as Filter } from './ProductsLayout/Filter/Filter'
 export { default as Sort } from './ProductsLayout/Sort/Sort'
 export { default as Products } from './ProductsLayout/Products/Products'
@@ -25,3 +25,7 @@ export { default as EmptyCart } from './Cart/EmptyCart'
 
 // ORDERS
 export { default as Orders } from './Checkout/Orders'
+
+// ERROR
+export { default as ErrorData } from './Error/ErrorData'
+export { default as Error404 } from './Error/Error404'

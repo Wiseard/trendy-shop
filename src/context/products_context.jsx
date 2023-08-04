@@ -19,8 +19,6 @@ const initialState = {
   single_product_error: false,
   single_product: {},
 }
-// filter : *[_type == "product" && featured]
-// export const featuredUrl = `/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22product%22+%26%26+featured%5D`
 export const featuredUrl = `/v2021-10-21/data/query/production?query=*%5B_type+%3D%3D+%22product%22%5D`
 
 const ProductsContext = React.createContext()

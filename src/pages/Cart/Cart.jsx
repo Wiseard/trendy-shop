@@ -10,6 +10,7 @@ const Cart = () => {
   const { cart } = useCartContext()
   useEffect(() => {
     document.title = 'Trendy - Cart'
+    window.scrollTo(0, 0)
   }, [])
 
   return (
